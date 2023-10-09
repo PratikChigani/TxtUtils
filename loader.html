@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This page shows the loading animation." />
+    <title>Loading Animation</title>
+
+    <style>
+      /* html,
+      body {
+        height: 100%;
+        width: 100%;
+      } */
+
+      body {
+        padding: 250px;
+      }
+
+      #loader {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border: 5px solid white;
+        border-top-color: red;
+        border-right-color: green;
+        border-bottom-color: blue;
+        border-left-color: orange;
+        animation: rotate 1s infinite;
+      }
+
+      @keyframes rotate {
+        100% {
+          rotate: 1080deg;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="loader"></div>
+  </body>
+</html>
