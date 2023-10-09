@@ -6,21 +6,21 @@ Welcome to our Text Utility website! We're here to make working with text easier
 
 ## Text Transformation:
 
-`Uppercase`: Convert text to UPPERCASE to make it stand out.
-`Lowercase`: Change text to lowercase for a more subtle look.
-`Capitalize`: Easily capitalize the first letter of each word.
-`Remove Extra Spaces`: Tidy up your text by eliminating unnecessary spaces.
-`Clear Text`: Start fresh with a clean slate.
+`Uppercase`: Convert text to UPPERCASE to make it stand out.<br>
+`Lowercase`: Change text to lowercase for a more subtle look.<br>
+`Capitalize`: Easily capitalize the first letter of each word.<br>
+`Remove Extra Spaces`: Tidy up your text by eliminating unnecessary spaces.<br>
+`Clear Text`: Start fresh with a clean slate.<br>
 
 ## Text Analysis:
 
-`Word Count`: Find out how many words are in your text. Helpful for essays, reports, and more.
-`Character Count`: See the total number of characters in your text, including spaces.
+`Word Count`: Find out how many words are in your text. Helpful for essays, reports, and more.<br>
+`Character Count`: See the total number of characters in your text, including spaces.<br>
 
 # Customization:
 
-`Custom Themes`: Personalize your experience with our selection of themes. Choose the one that suits your style and preference.
-`Preview`: Get a live preview of your text as you make changes, so you can see the results in real-time.
+`Custom Themes`: Personalize your experience with our selection of themes. Choose the one that suits your style and preference.<br>
+`Preview`: Get a live preview of your text as you make changes, so you can see the results in real-time.<br>
 
 # Why Use Our Tool?
 
