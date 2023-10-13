@@ -41,6 +41,7 @@ function TextForm(props) {
     let text = document.getElementById("myBox");
     text.select();
     navigator.clipboard.writeText(text.value);
+    document.getSelection().removeAllRanges();
     props.showAlert("Text has been copied to clipboard.", "success");
     props.mySetTimeout();
   };
@@ -86,6 +87,7 @@ function TextForm(props) {
           ></textarea>
         </div>
         <button
+          disabled={text.length === 0}
           className="btn btn-primary br mx-1"
           onClick={handleOnClickUpper}
           style={props.btnMode}
@@ -93,6 +95,7 @@ function TextForm(props) {
           Convert to Uppercase
         </button>
         <button
+          disabled={text.length === 0}
           className="btn btn-primary br mx-1"
           onClick={handleOnClickLower}
           style={props.btnMode}
@@ -100,6 +103,7 @@ function TextForm(props) {
           Convert to Lowercase
         </button>
         <button
+          disabled={text.length === 0}
           className="btn btn-primary br mx-1"
           style={props.btnMode}
           onClick={handleOnClickCap}
@@ -107,6 +111,7 @@ function TextForm(props) {
           Capitalize
         </button>
         <button
+          disabled={text.length === 0}
           className="btn btn-primary br mx-1"
           style={props.btnMode}
           onClick={handleOnClickClear}
@@ -114,6 +119,7 @@ function TextForm(props) {
           Clear
         </button>
         <button
+          disabled={text.length === 0}
           className="btn btn-primary br mx-1"
           style={props.btnMode}
           onClick={handleCopy}
@@ -121,6 +127,7 @@ function TextForm(props) {
           Copy
         </button>
         <button
+          disabled={text.length === 0}
           className="btn btn-primary br mx-1"
           style={props.btnMode}
           onClick={handleExtraSpaces}

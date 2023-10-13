@@ -62,51 +62,13 @@ function Navbar(props) {
               type="checkbox"
               role="switch"
               id="flexSwitchCheckDefault"
-              onClick={props.toggleMode.toggleToGreyMode}
-            />
-            <label
-              className="form-check-label"
-              htmlFor="flexSwitchCheckDefault"
-            >
-              Enable {props.mode !== "grey" ? "Grey" : "Light"} Mode
-            </label>
-          </div>
-          <div
-            className={`form-check form-switch mx-3 text-${
-              props.mode === "light" ? "dark" : "light"
-            }`}
-          >
-            <input
-              className="form-check-input"
-              type="checkbox"
-              role="switch"
-              id="flexSwitchCheckDefault"
-              onClick={props.toggleMode.toggleToGreenMode}
-            />
-            <label
-              className="form-check-label"
-              htmlFor="flexSwitchCheckDefault"
-            >
-              Enable {props.mode !== "green" ? "Green" : "Light"} Mode
-            </label>
-          </div>
-          <div
-            className={`form-check form-switch mx-3 text-${
-              props.mode === "light" ? "dark" : "light"
-            }`}
-          >
-            <input
-              className="form-check-input"
-              type="checkbox"
-              role="switch"
-              id="flexSwitchCheckDefault"
               onClick={props.toggleMode.toggleToBlueMode}
             />
             <label
               className="form-check-label"
               htmlFor="flexSwitchCheckDefault"
             >
-              Enable {props.mode === "blue" ? "Blue" : "Light"} Mode
+              Enable {props.mode === "blue" ? "Light" : "Dark"} Mode
             </label>
           </div>
         </div>

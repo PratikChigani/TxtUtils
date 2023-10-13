@@ -20,14 +20,7 @@ function App() {
     color: "White",
     backgroundColor: "#042743",
   };
-  const myGreenDarkBodyMode = {
-    color: "White",
-    backgroundColor: "green",
-  };
-  const myGreyDarkBodyMode = {
-    color: "White",
-    backgroundColor: "grey",
-  };
+
   const myLightBodyMode = {
     color: "Black",
     backgroundColor: "White",
@@ -42,16 +35,7 @@ function App() {
     backgroundColor: "#042743",
     border: "1px solid White",
   };
-  const myGreenDarkBtnMode = {
-    color: "White",
-    backgroundColor: "green",
-    border: "1px solid White",
-  };
-  const myGreyDarkBtnMode = {
-    color: "White",
-    backgroundColor: "grey",
-    border: "1px solid White",
-  };
+
   const myLightBtnMode = {
     color: "White",
     backgroundColor: "#0d6efd",
@@ -66,7 +50,7 @@ function App() {
     setBtnMode(myBlueDarkBtnMode);
     setBodyMode(myBlueDarkBodyMode);
     document.body.style.backgroundColor = "#042743";
-    showAlert("Blue dark mode has been set.", "success");
+    showAlert("Dark mode has been set.", "success");
     mySetTimeout();
   };
 
@@ -79,24 +63,6 @@ function App() {
     mySetTimeout();
   };
 
-  const toggleToGreenDarkMode = () => {
-    setMode("green");
-    setBtnMode(myGreenDarkBtnMode);
-    setBodyMode(myGreenDarkBodyMode);
-    document.body.style.backgroundColor = "green";
-    showAlert("Green dark mode has been set.", "success");
-    mySetTimeout();
-  };
-
-  const toggleToGreyDarkMode = () => {
-    setMode("grey");
-    setBtnMode(myGreyDarkBtnMode);
-    setBodyMode(myGreyDarkBodyMode);
-    document.body.style.backgroundColor = "grey";
-    showAlert("Grey dark mode has been set.", "success");
-    mySetTimeout();
-  };
-
   const toggleToBlueMode = () => {
     if (mode !== "blue") {
       toggleToBlueDarkMode();
@@ -104,25 +70,9 @@ function App() {
       toggleToLightMode();
     }
   };
-  const toggleToGreenMode = () => {
-    if (mode !== "green") {
-      toggleToGreenDarkMode();
-    } else {
-      toggleToLightMode();
-    }
-  };
-  const toggleToGreyMode = () => {
-    if (mode !== "grey") {
-      toggleToGreyDarkMode();
-    } else {
-      toggleToLightMode();
-    }
-  };
 
   const toggleMode = {
     toggleToBlueMode: toggleToBlueMode,
-    toggleToGreenMode: toggleToGreenMode,
-    toggleToGreyMode: toggleToGreyMode,
   };
 
   const [alert, setAlert] = useState(null);
